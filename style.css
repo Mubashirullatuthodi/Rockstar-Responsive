@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    font-family: var(--font-family-h);
+}
+
+.container-fluid{
+    background-color: #0b0b0b;
+}
+/* .hover-line li{
+    border-bottom: solid white;
+} */
+
+.hover-line li:hover{
+    border-bottom: solid 1px white;
+    transition: 0.4s ease;
+}
+/* .bord{
+    border: solid 1px #282828;
+} */
+.main-text{
+    margin: 3%;
+}
+.img-section{
+    display: flex;
+ 
+}
+.img-length{
+    width: 70%;
+}
+@media screen and (max-width:1122px){
+   .img-section{
+    flex-direction: column;
+   }
+   .img-length{
+    width: 100%;
+}
+}
+
+
+.cards:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.left a{
+    text-decoration: none;
+    color:whitesmoke ;
+    font-weight: 600;
+}
+
+.left a:hover{
+    color:yellow ;
+    transition: 0.4s;
+}
+
+.view-text a{
+    color: white;
+    text-decoration: underline;
+   
+}
+.view-text a:hover{
+    background-color: #333;
+    color: #fff;
+   
+}
+
+@media screen and (max-width:420px){
+    .left{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding-top: 0px;
+    }
+    .left a{
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+    .first-line{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 0px;
+    }
+    .last-line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:762px){
+    .first-line{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .left a{
+        padding-bottom: 10px;
+    }
+    .last-line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:762px){
+    .left{
+        display: flex;
+        flex-direction: column;
+    }
+    .left a{
+        padding-bottom: 10px;
+    }
+
+
+    .last-line{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1028px){
+    .left{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 50%; 
+    }
+    .last-line{
+        display: flex;
+        justify-content: space-between;
+    }
+}
